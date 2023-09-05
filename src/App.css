@@ -1,0 +1,75 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 400px;
+  min-height: 250px;
+}
+
+.advice-description {
+  color: hsl(193, 38%, 86%);
+  width: 80%;
+  margin:0;
+  font-size: 1.25em;
+}
+
+.advice-title {
+  color: hsl(150, 100%, 66%);
+  margin: 2.5em 0 2em 0;
+  text-transform: uppercase;
+  letter-spacing: .3rem; 
+  font-size: 0.7em;
+}
+
+.generate-advice {
+  position: absolute;
+  bottom: -24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 100%;
+  padding: 1.2em;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+  transition: all .3s ease-in;
+  width: min-content;
+
+}
+.generate-advice:hover {
+  box-shadow: 0 0 5px hsl(150, 100%, 66%), 0 0 20px hsl(150, 100%, 66%),
+    0 0 10px hsl(150, 100%, 66%), 0 0 50px hsl(150, 100%, 66%);
+}
+
+.separator {
+  width: 75%;
+  margin: 2em 0 4em 0;
+}
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
